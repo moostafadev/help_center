@@ -11,7 +11,9 @@ const Header = () => {
       <div className="container">
         <div className="flex justify-between">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold">Logo</h1>
+            <a href="#">
+              <h1 className="text-2xl font-bold">Logo</h1>
+            </a>
           </div>
           <div className="flex items-center">
             <ul className="gap-4 md:gap-6 sm:flex hidden">
@@ -47,7 +49,7 @@ const Header = () => {
               )}
             </Button>
             <div
-              className={`sm:hidden fixed w-full left-0 top-16 bg-main text-white duration-300 overflow-hidden ${
+              className={`sm:hidden fixed w-full left-0 top-16 bg-main text-white duration-300 overflow-hidden z-10 ${
                 isOpen === false ? "h-0" : "h-[calc(100vh-64px)]"
               }`}
             >
