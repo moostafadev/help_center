@@ -30,7 +30,7 @@ const Page = ({ params }: PageProps) => {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container min-h-[calc(100vh-204px)]">
         <div className="flex justify-between gap-4">
           <div className="py-10 flex flex-col gap-8 w-full">
             <div>
