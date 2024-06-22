@@ -48,7 +48,7 @@ const Footer = () => {
               <li>
                 <Link href={"/"}>
                   <Image
-                    src={"x.svg"}
+                    src={"/x.svg"}
                     alt="logo"
                     width={20}
                     height={20}
@@ -59,7 +59,7 @@ const Footer = () => {
               <li>
                 <Link href={"/"}>
                   <Image
-                    src={"tiktok.svg"}
+                    src={"/tiktok.svg"}
                     alt="logo"
                     width={20}
                     height={20}
@@ -70,7 +70,7 @@ const Footer = () => {
               <li>
                 <Link href={"/"}>
                   <Image
-                    src={"instagram.svg"}
+                    src={"/instagram.svg"}
                     alt="logo"
                     width={20}
                     height={20}
