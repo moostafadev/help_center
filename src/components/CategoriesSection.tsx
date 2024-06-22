@@ -34,6 +34,7 @@ const CategoriesSection = () => {
                           alt={product.title}
                           width={50}
                           height={50}
+                          loading="lazy"
                           className="rounded-md"
                         />
                       </div>
