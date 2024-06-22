@@ -6,13 +6,13 @@ const HeroSection = () => {
   return (
     <section className="min-h-[calc(100vh-64px)] py-8 bg-main text-white overflow-hidden relative">
       <div className="container h-[calc(100vh-200px)]">
-        <div className="flex justify-center items-center h-full mt-[-80px] flex-col gap-6">
+        <div className="flex justify-center items-center h-full mt-[-50px] flex-col gap-6">
           <div>
-            <h1 className="text-4xl font-bold text-center">
+            <h1 className="text-[28px] font-bold text-center">
               Hi there, need some help?
             </h1>
           </div>
-          <MainInput />
+          <MainInput className="max-w-[640px] w-full" />
         </div>
       </div>
       <div className="absolute bottom-[-40px] sm:bottom-0 left-[-50%] sm:left-0 w-[200%] sm:w-full overflow-hidden leading-none rotate-180">

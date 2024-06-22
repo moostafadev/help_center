@@ -31,31 +31,34 @@ const Page = ({ params }: PageProps) => {
         </div>
       </div>
       <div className="container">
-        <div className="py-10 flex flex-col gap-8">
-          <div>
-            <BreadcrumbDemo
-              title={params.id.split("-")[1]?.replaceAll("%20", " ")}
-            />
-          </div>
-          <div className="flex flex-col gap-6">
-            <div className="p-3 rounded-md bg-secondAlt w-fit">
-              {/* For Test */}
-              <Image
-                src={product.thumbnail}
-                alt={product.title}
-                width={50}
-                height={50}
-                className="rounded-md"
+        <div className="flex justify-between gap-4">
+          <div className="py-10 flex flex-col gap-8 w-full">
+            <div>
+              <BreadcrumbDemo
+                title={params.id.split("-")[1]?.replaceAll("%20", " ")}
               />
             </div>
-            <div className="flex flex-col gap-2">
-              <h2 className="text-4xl font-bold">{product.title}</h2>
-              <p className="text-sm text-gray-500">{product.description}</p>
-              <p className="text-sm text-gray-500">
-                {product?.reviews?.length} - Review
-              </p>
+            <div className="flex flex-col gap-6">
+              <div className="p-3 rounded-md bg-secondAlt w-fit">
+                {/* For Test */}
+                <Image
+                  src={product.thumbnail}
+                  alt={product.title}
+                  width={50}
+                  height={50}
+                  className="rounded-md"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <h2 className="text-4xl font-bold">{product.title}</h2>
+                <p className="text-sm text-gray-500">{product.description}</p>
+                <p className="text-sm text-gray-500">
+                  {product?.reviews?.length} - Review
+                </p>
+              </div>
             </div>
           </div>
+          <div className="w-[30%] py-10 flex flex-col gap-4"></div>
         </div>
       </div>
     </div>

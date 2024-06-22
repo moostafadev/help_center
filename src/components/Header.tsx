@@ -18,16 +18,16 @@ const Header = () => {
           </div>
           <div className="flex items-center">
             <ul className="gap-4 md:gap-6 sm:flex hidden">
-              <li className="hover:text-gray-300 duration-300">
+              <li className="hover:text-gray-300 duration-300 text-sm">
                 <a href="#">Go to Intercom</a>
               </li>
-              <li className="hover:text-gray-300 duration-300">
+              <li className="hover:text-gray-300 duration-300 text-sm">
                 <a href="#">Community</a>
               </li>
-              <li className="hover:text-gray-300 duration-300">
+              <li className="hover:text-gray-300 duration-300 text-sm">
                 <a href="#">Academy</a>
               </li>
-              <li className="hover:text-gray-300 duration-300">
+              <li className="hover:text-gray-300 duration-300 text-sm">
                 <a href="#">Developer Hub</a>
               </li>
             </ul>

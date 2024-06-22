@@ -4,7 +4,13 @@ import { Search } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { FormEvent, useRef } from "react";
 
-const MainInput = ({ valueSearch }: { valueSearch?: string }) => {
+const MainInput = ({
+  valueSearch,
+  className,
+}: {
+  valueSearch?: string;
+  className?: string;
+}) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
 
@@ -16,7 +22,10 @@ const MainInput = ({ valueSearch }: { valueSearch?: string }) => {
     }
   };
   return (
-    <form className="relative group w-full" onSubmit={onSubmitHandle}>
+    <form
+      className={`relative group w-full ${className}`}
+      onSubmit={onSubmitHandle}
+    >
       <input
         ref={inputRef}
         defaultValue={valueSearch}

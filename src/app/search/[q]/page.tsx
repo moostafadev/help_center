@@ -22,10 +22,10 @@ const Page = ({ params }: PageProps) => {
 
   return (
     <div>
-      <div className="bg-main text-white py-10">
+      <div className="bg-main text-white py-14">
         <div className="container">
           <div className="text-white">
-            <h1 className="text-4xl font-bold text-center mb-10">
+            <h1 className="text-[28px] font-bold text-center mb-8">
               Hi there, need some help?
             </h1>
             <MainInput valueSearch={params.q.split("%3D")[1]} />
@@ -34,7 +34,7 @@ const Page = ({ params }: PageProps) => {
       </div>
       <div className="py-10 min-h-[calc(100vh-284px)]">
         <div className="container">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-4">
             <div>
               <p className="text-lg font-semibold">
                 <span className="text-gray-600 mr-2 text-lg">
@@ -45,17 +45,17 @@ const Page = ({ params }: PageProps) => {
                 {params.q.split("%3D")[1]}
               </p>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-3">
               {products.length
                 ? products.map((product) => (
                     <div key={product.id}>
                       <Link
                         href={`/artical/${product.id}-${product.title}`}
-                        className="block shadow-sm p-6 border-gray-200 border-[1px] rounded-md hover:border-second duration-300 group hover:text-second"
+                        className="block shadow-sm px-4 py-3 border-gray-200 border-[1px] rounded-md hover:border-second duration-300 group hover:text-second"
                       >
                         <div className="flex gap-4 items-center">
                           <div className="flex flex-col gap-2">
-                            <h2>{product.title}</h2>
+                            <h2 className="font-semibold">{product.title}</h2>
                             <p className="text-sm text-gray-500">
                               {product.description}
                             </p>
