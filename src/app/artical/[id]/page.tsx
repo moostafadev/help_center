@@ -34,7 +34,7 @@ const Page = ({ params }: PageProps) => {
         <div className="py-10 flex flex-col gap-8">
           <div>
             <BreadcrumbDemo
-              title={params.id.split("-")[1].replaceAll("%20", " ")}
+              title={params.id.split("-")[1]?.replaceAll("%20", " ")}
             />
           </div>
           <div className="flex flex-col gap-6">
