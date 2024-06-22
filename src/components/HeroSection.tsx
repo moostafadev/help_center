@@ -1,5 +1,6 @@
 import { Search } from "lucide-react";
 import React from "react";
+import MainInput from "./MainInput";
 
 const HeroSection = () => {
   return (
@@ -11,14 +12,7 @@ const HeroSection = () => {
               Hi there, need some help?
             </h1>
           </div>
-          <div className="relative group">
-            <input
-              type="text"
-              placeholder="Search for articles..."
-              className="py-4 px-6 pl-14 outline-none rounded-md bg-[#364452] focus:bg-white duration-300 caret-black w-[260px] sm:w-[440px] md:w-[640px] placeholder:text-white placeholder:focus:text-[#364452] focus:text-[#364452] text-white"
-            />
-            <Search className="absolute top-[50%] translate-y-[-50%] left-4 text-white group-focus-within:text-[#364452]" />
-          </div>
+          <MainInput />
         </div>
       </div>
       <div className="absolute bottom-[-40px] sm:bottom-0 left-[-50%] sm:left-0 w-[200%] sm:w-full overflow-hidden leading-none rotate-180">

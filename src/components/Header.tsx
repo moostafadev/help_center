@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +12,9 @@ const Header = () => {
       <div className="container">
         <div className="flex justify-between">
           <div className="flex items-center">
-            <a href="#">
+            <Link href="/">
               <h1 className="text-2xl font-bold">Logo</h1>
-            </a>
+            </Link>
           </div>
           <div className="flex items-center">
             <ul className="gap-4 md:gap-6 sm:flex hidden">
